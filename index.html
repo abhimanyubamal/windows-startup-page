@@ -9,20 +9,31 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+    <!-- SLICK CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     <header>
         <nav>
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-center">
-                    <a href="">Lorem Ipsum</a>
-                    <a href="">Founders Hub</a>
-                    <a href="">Benefits</a>
-                    <a href="">Programs</a>
-                    <a href="">Lorem Ipsum</a>
-                    <a href="">Lorem Ipsum</a>
+            <div class="container d-flex justify-content-lg-center justify-content-end">
+                <div class="menu" id="nav-menu">
+                    <a href="#">Lorem Ipsum</a>
+                    <a href="#section-1">Founders Hub</a>
+                    <a href="#section-2">Benefits</a>
+                    <a href="#section-3">Programs</a>
+                    <a href="#section-4">Lorem Ipsum</a>
+                    <a href="#section-5">Lorem Ipsum</a>
                 </div>
+                <label><span></span></label>
             </div>
         </nav>
         <div class="d-flex" id="hero-section">
@@ -39,19 +50,19 @@
     </header>
     <section id="section-1">
         <div class="container d-flex justify-content-center">
-            <div class="d-flex flex-column w-50">
+            <div class="d-flex flex-column section-1-description">
                 <h2 class="section-heading">Welcome to Microsoft FOR STARTUP</h2>
-                <p class="section-1-para section-1-text-style">Microsoft for Startups is a globalteam dedicated to
+                <p class="section-1-para section-text-style">Microsoft for Startups is a globalteam dedicated to
                     helping startups
                     successfully build
                     and scale their companies. The teamsupports qualifiedstartups across fourmain pillars:</p>
-                <ul class="section-1-list section-1-text-style">
+                <ul class="section-1-list section-text-style">
                     <li>Tech Enablement</li>
                     <li>“Foundership” Skillset</li>
                     <li>Global Sales</li>
                     <li>Corporate Readiness</li>
                 </ul>
-                <p class="mt-33 section-1-text-style">The program supports startups by providing them with Microsoft
+                <p class="mt-33 section-text-style">The program supports startups by providing them with Microsoft
                     cloud credits, free access to selected Microsoft products
                     and unique 3rd party offers for entrepreneurs, via it’s digital platform called ׳Founders Hub׳</p>
             </div>
@@ -60,19 +71,19 @@
     <section id="section-2">
         <div class="container">
             <h2 class="section-heading">MicroSpot - Whats New?</h2>
-            <div class="row justify-content-between">
-                <div class="col-4 section-2-cards">
+            <div class="row justify-content-xxl-between justify-content-center">
+                <div class="section-2-cards">
                     <h3 class="section-2-cards-heading">Marketplace Summit // 22.6 @Herzelia</h3>
-                    <div class="section-3-cards-img-container">
+                    <div class="section-2-cards-img-container">
                         <img src="./assets/images/section-2-card-1-img.png" alt="Marketplace Spring Summit by Microsoft"
                             class="w-100">
-                        <div class="d-flex justify-content-between align-items-end mt-22">
+                        <div class="d-flex justify-content-between align-items-end mt-22 h-100">
                             <p class="section-2-cards-para w-75">This event is a dedicated platform for ISVs and Service
                                 Partners
                                 to unlock the vast potential of the marketplace engine
                                 to simplify sales and supercharge growth.</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
+                            <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                viewBox="0 0 23 23" fill="none">
                                 <path
                                     d="M22.2812 8.625H14.375V0.71875C14.375 0.528126 14.2993 0.345309 14.1645 0.210517C14.0297 0.0757252 13.8469 0 13.6562 0L9.34375 0C9.15313 0 8.97031 0.0757252 8.83552 0.210517C8.70073 0.345309 8.625 0.528126 8.625 0.71875V8.625H0.71875C0.528126 8.625 0.345309 8.70073 0.210517 8.83552C0.0757252 8.97031 0 9.15313 0 9.34375L0 13.6562C0 13.8469 0.0757252 14.0297 0.210517 14.1645C0.345309 14.2993 0.528126 14.375 0.71875 14.375H8.625V22.2812C8.625 22.4719 8.70073 22.6547 8.83552 22.7895C8.97031 22.9243 9.15313 23 9.34375 23H13.6562C13.8469 23 14.0297 22.9243 14.1645 22.7895C14.2993 22.6547 14.375 22.4719 14.375 22.2812V14.375H22.2812C22.4719 14.375 22.6547 14.2993 22.7895 14.1645C22.9243 14.0297 23 13.8469 23 13.6562V9.34375C23 9.15313 22.9243 8.97031 22.7895 8.83552C22.6547 8.70073 22.4719 8.625 22.2812 8.625Z"
                                     fill="black" />
@@ -80,19 +91,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 section-2-cards">
+                <div class="section-2-cards">
                     <h3 class="section-2-cards-heading">All Founders // 25.6 @TLV</h3>
-                    <div class="section-3-cards-img-container">
+                    <div class="section-2-cards-img-container">
                         <img src="./assets/images/section-2-card-2-img.png" alt="25th Juner - Save the Date"
                             class="w-100">
-                        <div class="d-flex justify-content-between align-items-end mt-22">
+                        <div class="d-flex justify-content-between align-items-end mt-22 h-100">
                             <p class="section-2-cards-para w-75">All Founders by Microsoft for Startups, Israel’s
                                 largest
                                 founders’ gathering, created to inspire, connect and educate
                                 entrepreneurs.
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
+                            <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                viewBox="0 0 23 23" fill="none">
                                 <path
                                     d="M22.2812 8.625H14.375V0.71875C14.375 0.528126 14.2993 0.345309 14.1645 0.210517C14.0297 0.0757252 13.8469 0 13.6562 0L9.34375 0C9.15313 0 8.97031 0.0757252 8.83552 0.210517C8.70073 0.345309 8.625 0.528126 8.625 0.71875V8.625H0.71875C0.528126 8.625 0.345309 8.70073 0.210517 8.83552C0.0757252 8.97031 0 9.15313 0 9.34375L0 13.6562C0 13.8469 0.0757252 14.0297 0.210517 14.1645C0.345309 14.2993 0.528126 14.375 0.71875 14.375H8.625V22.2812C8.625 22.4719 8.70073 22.6547 8.83552 22.7895C8.97031 22.9243 9.15313 23 9.34375 23H13.6562C13.8469 23 14.0297 22.9243 14.1645 22.7895C14.2993 22.6547 14.375 22.4719 14.375 22.2812V14.375H22.2812C22.4719 14.375 22.6547 14.2993 22.7895 14.1645C22.9243 14.0297 23 13.8469 23 13.6562V9.34375C23 9.15313 22.9243 8.97031 22.7895 8.83552C22.6547 8.70073 22.4719 8.625 22.2812 8.625Z"
                                     fill="black" />
@@ -100,18 +111,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 section-2-cards">
+                <div class="section-2-cards">
                     <h3 class="section-2-cards-heading">GenAI Discovery Day // 19.6 @TLV</h3>
-                    <div class="section-3-cards-img-container">
+                    <div class="section-2-cards-img-container">
                         <img src="./assets/images/section-2-card-3-img.png" alt="19th June - Gen Discovery AI day"
                             class="w-100">
-                        <div class="d-flex justify-content-between align-items-end mt-22">
+                        <div class="d-flex justify-content-between align-items-end mt-22 h-100">
                             <p class="section-2-cards-para w-75">A firsthand look at the latest NVIDIA & Microsoft
                                 technologies,
                                 tools and techniques that can help them take AI into
                                 production.</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                fill="none">
+                            <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                viewBox="0 0 23 23" fill="none">
                                 <path
                                     d="M22.2812 8.625H14.375V0.71875C14.375 0.528126 14.2993 0.345309 14.1645 0.210517C14.0297 0.0757252 13.8469 0 13.6562 0L9.34375 0C9.15313 0 8.97031 0.0757252 8.83552 0.210517C8.70073 0.345309 8.625 0.528126 8.625 0.71875V8.625H0.71875C0.528126 8.625 0.345309 8.70073 0.210517 8.83552C0.0757252 8.97031 0 9.15313 0 9.34375L0 13.6562C0 13.8469 0.0757252 14.0297 0.210517 14.1645C0.345309 14.2993 0.528126 14.375 0.71875 14.375H8.625V22.2812C8.625 22.4719 8.70073 22.6547 8.83552 22.7895C8.97031 22.9243 9.15313 23 9.34375 23H13.6562C13.8469 23 14.0297 22.9243 14.1645 22.7895C14.2993 22.6547 14.375 22.4719 14.375 22.2812V14.375H22.2812C22.4719 14.375 22.6547 14.2993 22.7895 14.1645C22.9243 14.0297 23 13.8469 23 13.6562V9.34375C23 9.15313 22.9243 8.97031 22.7895 8.83552C22.6547 8.70073 22.4719 8.625 22.2812 8.625Z"
                                     fill="black" />
@@ -122,9 +133,558 @@
             </div>
         </div>
     </section>
+    <section id="section-3">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="d-flex flex-column section-3-description">
+                <h3 class="section-heading">Founders Hub</h3>
+                <h4 class="section-3-subheading">MicrosoS for Startups Digital PlaVorm</h4>
+                <div class="d-flex flex-column gap-3 text-center">
+                    <p class="section-text-style">MicrosoM for Startups Founders Hub brings people, knowledgeand
+                        benefits together to help founders at every stage solve
+                        startup challenges. Sign up in minutes with no funding required</p>
+                    <p class="section-text-style">In addiTon to thesupport and benefits founders get from the MicrosoM
+                        family of products and servicesin MicrosoM for
+                        Startups Founders Hub, we also offer a porPolio of trusted partner offers to provide maximum
+                        value to our in-program
+                        startups. These exciTng partner offers are tailored
+                        to the needs of startups today</p>
+                </div>
+            </div>
+            <img src="./assets/images/section-3-img.png" alt="" class="section-3-img">
+            <button class="section-3-button mt-60">Apply to Founders Hub</button>
+        </div>
+    </section>
+    <section id="section-4">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="section-4-description">
+                <h2 class="section-heading">Founders Hub Benefits</h2>
+                <p class="section-text-style section-4-para">Microsoft for Startups Founders Hub brings people,
+                    knowledge and benefits
+                    together to help founders at every stage solve
+                    startup challenges. Sign up in minutes with no funding required. In addition to the support and
+                    benefits founders get
+                    from the Microsoft family of products and services in Microsoft for Startups Founders Hub, we also
+                    offer a portfolio of
+                    trusted partner offers to provide maximum value to our in-program startups. These exciting partner
+                    offers are tailored
+                    to the needs of startups today.</p>
+            </div>
+            <div class="row flex-wrap section-4-row">
+                <div class="section-4-cards">
+                    <img src="./assets/images/open-ai-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/linked-in-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/mercuru-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/drata-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/bubble-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/close-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/miro-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/ansarada-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/code-see-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/mass-friver-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/stripe-logo.png" alt="" class="w-100">
+                </div>
+                <div class="section-4-cards">
+                    <img src="./assets/images/angel-list-logo.png" alt="" class="w-100">
+                </div>
+            </div>
+            <div class="row section-4-button-row">
+                <button class="section-4-buttons">Apply to FH program</button>
+                <button class="section-4-buttons">More informaTon on benefits</button>
+                <button class="section-4-buttons">Learn more on Azure credits</button>
+            </div>
+        </div>
+    </section>
+    <!-- SLIDER SECTION  -->
+    <section id="section-5">
+        <div class="container">
+            <h2 class="section-heading">‘Microsoft for Startups’ Programs</h2>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="slide-left slide-img-1">
+                                <div class="slider-on-top-container">
+                                    <p class="slider-on-top-text">“Foundership Workshops” Academy</p>
+                                </div>
+                            </div>
+                            <div class="slide-right">
+                                <ul>
+                                    <li>The “Foundership Workshops” Academy is as eries of valuable & pracQcal 1-day
+                                        workshops,
+                                        each Qme focusing on as pecific
+                                        challenge, verQcal or stage of the founder’s journey.
+                                    </li>
+                                    <li><b>Format</b>: The workshop sessions are delivered by top ecosystem leaders in
+                                        the
+                                        relevant field, providing founders
+                                        with insider insights, practical tools and new connections.
+                                    </li>
+                                    <li><b>Who can join</b>: The “Foundership workshops”are open to all members of our
+                                        Founders
+                                        Hub community. Yet, as these are
+                                        exclusive and intimate events, seats are limited and curated to the most
+                                        relevant
+                                        startups.</li>
+                                    <li><b>Timeline</b>: Workshops run on a monthly basis. Registration is open and
+                                        renewed
+                                        for
+                                        each topic.</li>
+                                    <li>Sign up to receive next work shops invitations.</li>
+                                </ul>
+                                <a href="#" class="slider-link">Link to the progrem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="slide-left slide-img-2">
+                                <div class="slider-on-top-container">
+                                    <p class="slider-on-top-text">AI for Good Accelerator</p>
+                                </div>
+                            </div>
+                            <div class="slide-right">
+                                <ul>
+                                    <li>The AI for Good Acceleration Program helps purpose-driven ventures in Israel
+                                        advance
+                                        their AI solutions to create
+                                        positive social transformation.
+                                    </li>
+                                    <li><b>Format</b>: For the fourth year running, Microsoft for Startups Israel and
+                                        TechForGood will be selecting a cohort of
+                                        startups committed a social mission to join this 9-weeks program.
+                                    </li>
+                                    <li><b>Who can join</b>: Who can join: Startups like yours with innovative
+                                        technology so
+                                        you can focus on what you do best: bring your vision of
+                                        making the world a better place to live.</li>
+                                    <li><b>Timeline</b>: Registration for the 4th cohort is open up until March 21st
+                                    </li>
+                                    <li>Link for application.</li>
+                                </ul>
+                                <a href="#" class="slider-link">Link to the progrem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="slide-left slide-img-3">
+                                <div class="slider-on-top-container">
+                                    <p class="slider-on-top-text">Startup SpaceProgram</p>
+                                </div>
+                            </div>
+                            <div class="slide-right">
+                                <ul>
+                                    <li>The Startup Space initiative is a lean content program, providing a few
+                                        promising
+                                        startups from our Founders hub
+                                        community, a shared office space within our TLV @Midtown office. This allows
+                                        early-stage startup founders to work more
+                                        efficiently and collaboratively, while leveraging Microsoft’s products,
+                                        technology,
+                                        ande xperts to boost their growth.
+                                    </li>
+                                    <li><b>Format</b>: The Startup Space initiative cohort is about two month long and
+                                        includes between 3-5 startup each Qme
+                                    </li>
+                                    <li><b>Who can join</b>: The program is available for early-stage startups in
+                                        pre-seed
+                                        stage, who are members of our ‘Founders Hub’ community.</li>
+                                    <li><b>Timeline</b>: Every other month we will reach out to all applicants and
+                                        invite
+                                        relevant startups for our interview process. Feel free
+                                        to list your startupt owards the next cohort process.</li>
+                                    <li>Link for application.</li>
+                                </ul>
+                                <a href="#" class="slider-link">Link to the progrem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="slide-left slide-img-4">
+                                <div class="slider-on-top-container">
+                                    <p class="slider-on-top-text">Late - stage startups:
+                                        Pegasus Program</p>
+                                </div>
+                            </div>
+                            <div class="slide-right">
+                                <ul>
+                                    <li>Pegasus is a leading program, helping promising, late-stage B2B startups with
+                                        strategic customer acquisition, while
+                                        providing a personalized support system within Microsoft to help startups
+                                        thrive.
+                                    </li>
+                                    <li><b>Format</b>: Pegasus is a two-year program, during which accepted startups
+                                        receive
+                                        white glove technical support and tailored
+                                        go-to-market opportunities from the Pegasus team, including co-selling to
+                                        Microsoft’s customers with our enterprise
+                                        account teams and through it’s commercial marketplace
+                                    </li>
+                                    <li><b>Timeline</b>: The program is exclusively open for venture-backed, B2B
+                                        technology
+                                        startups, with demonstrable traction (i.e., having
+                                        early product-market fit, revenue traction, sales team in place, and a proven
+                                        go-to-market model). The program has focus
+                                        on industries like healthcare, AI, Retail,SpaceTech and Cybersecurity.</li>
+                                    <li>Timeline: All year long.</li>
+                                </ul>
+                                <a href="#" class="slider-link">Link to the progrem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg class="slider-prev-button" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.5005 16.4989C22.5005 16.0435 22.3462 15.6616 22.0376 15.353C21.7301 15.0455 21.3487 14.8917 20.8933 14.8917L15.7505 14.8917L17.1969 13.4453C17.4916 13.1507 17.6389 12.7757 17.6389 12.3203C17.6389 11.865 17.4916 11.49 17.1969 11.1953C16.9023 10.9007 16.5273 10.7533 16.0719 10.7533C15.6166 10.7533 15.2416 10.9007 14.9469 11.1953L10.7683 15.3739C10.6076 15.5346 10.4935 15.7087 10.426 15.8962C10.3596 16.0837 10.3264 16.2846 10.3264 16.4989C10.3264 16.7132 10.3596 16.9141 10.426 17.1016C10.4935 17.2891 10.6076 17.4632 10.7683 17.6239L14.9469 21.8025C15.2416 22.0971 15.6166 22.2444 16.0719 22.2444C16.5273 22.2444 16.9023 22.0971 17.1969 21.8025C17.4916 21.5078 17.6389 21.1328 17.6389 20.6775C17.6389 20.2221 17.4916 19.8471 17.1969 19.5525L15.7505 18.106L20.8933 18.106C21.3487 18.106 21.7301 17.9517 22.0376 17.6432C22.3462 17.3357 22.5005 16.9542 22.5005 16.4989ZM32.1433 16.4989C32.1433 18.7221 31.7212 20.8114 30.8769 22.7667C30.0337 24.7221 28.8889 26.423 27.4425 27.8694C25.996 29.3158 24.2951 30.4607 22.3398 31.3039C20.3844 32.1482 18.2951 32.5703 16.0719 32.5703C13.8487 32.5703 11.7594 32.1482 9.80406 31.3039C7.8487 30.4607 6.14781 29.3158 4.70138 27.8694C3.25495 26.423 2.1096 24.7221 1.26531 22.7667C0.422095 20.8114 0.000488446 18.7221 0.000488473 16.4989C0.000488499 14.2757 0.422096 12.1864 1.26531 10.231C2.1096 8.27567 3.25495 6.57478 4.70138 5.12835C6.14781 3.68192 7.8487 2.5371 9.80406 1.69389C11.7594 0.8496 13.8487 0.427456 16.0719 0.427456C18.2951 0.427456 20.3844 0.8496 22.3398 1.69389C24.2951 2.5371 25.996 3.68192 27.4425 5.12835C28.8889 6.57478 30.0337 8.27567 30.8769 10.231C31.7212 12.1864 32.1433 14.2757 32.1433 16.4989Z"
+                        fill="#8661C5" />
+                </svg>
+                <svg class="slider-next-button" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5005 16.5011C10.5005 16.9565 10.6548 17.3384 10.9633 17.647C11.2708 17.9545 11.6523 18.1083 12.1076 18.1083L17.2505 18.1083L15.8041 19.5547C15.5094 19.8493 15.3621 20.2243 15.3621 20.6797C15.3621 21.135 15.5094 21.51 15.8041 21.8047C16.0987 22.0993 16.4737 22.2466 16.9291 22.2466C17.3844 22.2467 17.7594 22.0993 18.0541 21.8047L22.2326 17.6261C22.3933 17.4654 22.5075 17.2913 22.575 17.1038C22.6414 16.9163 22.6746 16.7154 22.6746 16.5011C22.6746 16.2868 22.6414 16.0859 22.575 15.8984C22.5075 15.7109 22.3933 15.5368 22.2326 15.3761L18.0541 11.1975C17.7594 10.9029 17.3844 10.7556 16.9291 10.7556C16.4737 10.7556 16.0987 10.9029 15.8041 11.1975C15.5094 11.4922 15.3621 11.8672 15.3621 12.3225C15.3621 12.7779 15.5094 13.1529 15.8041 13.4475L17.2505 14.894L12.1076 14.894C11.6523 14.894 11.2708 15.0483 10.9633 15.3568C10.6548 15.6643 10.5005 16.0458 10.5005 16.5011ZM0.857631 16.5011C0.857631 14.2779 1.27978 12.1886 2.12406 10.2333C2.96728 8.2779 4.11209 6.57701 5.55852 5.13058C7.00495 3.68415 8.70585 2.53933 10.6612 1.69612C12.6166 0.85183 14.7058 0.429687 16.9291 0.429687C19.1523 0.429687 21.2416 0.85183 23.1969 1.69612C25.1523 2.53933 26.8532 3.68415 28.2996 5.13058C29.746 6.57701 30.8914 8.2779 31.7357 10.2333C32.5789 12.1886 33.0005 14.2779 33.0005 16.5011C33.0005 18.7243 32.5789 20.8136 31.7357 22.769C30.8914 24.7243 29.746 26.4252 28.2996 27.8717C26.8532 29.3181 25.1523 30.4629 23.1969 31.3061C21.2416 32.1504 19.1523 32.5725 16.9291 32.5725C14.7058 32.5725 12.6166 32.1504 10.6612 31.3061C8.70585 30.4629 7.00495 29.3181 5.55852 27.8717C4.11209 26.4252 2.96727 24.7243 2.12406 22.769C1.27977 20.8136 0.857631 18.7243 0.857631 16.5011Z"
+                        fill="#8661C5" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="section-6">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <div class="section-6-description">
+                    <h2 class="section-heading">Technology, Skilling & Support</h2>
+                    <p class="section-text-style text-center">Microsoft for Startups Founders Hub is addressing the
+                        crucial
+                        technical
+                        challenges founders face while building their
+                        cloud-based startup, with a comprehensive range of technical advisory offerings available to
+                        founders. These benefits
+                        offer Technical Enablement Trainings on Azure for quickly onboarding to the platform, Discovery
+                        Days
+                        across unique
+                        technologies in Microsoft for infusing innovation to your applications and offerings and 1:1
+                        sessions with experienced
+                        professionals giving you the perfect forum to ask technical questions about architecting your
+                        solution for optimal
+                        performance, scaling your product for success, migrating to Azure, and so much more.</p>
+                </div>
+            </div>
+            <div class="row section-6-card-row">
+                <div class="section-6-cards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="144" height="145" viewBox="0 0 144 145" fill="none">
+                        <path
+                            d="M87.8708 125.062C87.7533 127.28 87.6641 128.565 87.6236 129.85C87.583 131.066 87.6438 132.286 87.5709 133.494C87.4776 134.989 86.7845 136.234 85.1793 136.246C83.5092 136.258 82.4067 135.314 82.4026 133.465C82.4026 132.116 82.4188 130.762 82.3783 129.412C82.3418 128.253 82.2324 127.097 82.1108 125.208C79.7233 127.259 77.8019 128.844 75.9535 130.51C71.5392 134.479 67.1614 138.488 62.7634 142.472C62.1675 143.015 61.596 143.814 60.9028 143.964C59.9705 144.167 58.4504 144.207 58.041 143.668C57.4533 142.898 57.1736 141.276 57.6073 140.482C58.3531 139.112 59.6949 138.034 60.8907 136.947C67.3844 131.062 73.9389 125.245 80.388 119.306C81.3001 118.467 82.1919 117.138 82.2891 115.97C82.5486 112.776 82.3783 109.55 82.3783 105.995C80.7123 105.873 79.4152 105.707 78.114 105.703C72.4391 105.674 66.7642 105.727 61.0893 105.662C59.7678 105.646 58.3167 105.549 57.1776 104.977C56.448 104.612 55.7305 103.242 55.8521 102.456C55.9697 101.71 57.0925 100.859 57.9478 100.563C58.9166 100.231 60.084 100.454 61.1622 100.454C85.2117 100.454 109.261 100.454 133.307 100.454H138.321V15.9946H31.3324C31.2635 18.3051 31.1581 20.5467 31.146 22.7883C31.1379 24.13 30.8379 25.2488 29.3705 25.5447C27.7978 25.8608 26.4723 25.1353 26.379 23.599C26.1561 19.9954 26.1156 16.3634 26.3547 12.768C26.4074 11.9735 27.8383 10.9763 28.8314 10.6237C29.9178 10.2386 31.2311 10.4656 32.4472 10.4656C47.4451 10.4615 62.4391 10.4656 77.4371 10.4656C78.8882 10.4656 80.3353 10.4656 82.3864 10.4656C82.3864 8.43478 82.3783 6.86202 82.3864 5.28925C82.3905 4.47855 82.3621 3.66379 82.4553 2.8612C82.6175 1.49517 83.4201 0.550697 84.7983 0.502055C86.3508 0.449359 87.4168 1.4141 87.5182 2.93822C87.6681 5.20818 87.5587 7.49842 87.5587 10.2386C89.3666 10.3278 90.7934 10.4575 92.2202 10.4575C107.218 10.4737 122.212 10.4656 137.21 10.4696C138.292 10.4696 139.379 10.4088 140.453 10.5102C142.828 10.7291 143.542 11.4222 143.789 13.7368C143.89 14.6731 143.83 15.6257 143.83 16.5702C143.83 44.13 143.83 71.6939 143.83 99.2537C143.83 99.3875 143.83 99.5253 143.83 99.6591C143.805 105.079 143.266 105.67 137.782 105.679C122.922 105.707 108.057 105.691 93.1971 105.691C91.5879 105.691 89.9787 105.691 87.9033 105.691C87.4006 109.627 87.5019 113.364 87.8343 117.065C87.9114 117.924 89.0301 118.767 89.8003 119.473C96.5534 125.679 103.339 131.852 110.112 138.042C110.712 138.589 111.316 139.128 111.868 139.724C113.003 140.944 113.513 142.286 112.119 143.623C110.806 144.884 109.415 144.608 108.155 143.469C105.05 140.668 101.965 137.847 98.868 135.038C95.4752 131.957 92.0824 128.881 87.8749 125.066L87.8708 125.062Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M34.02 141.998C30.5704 144.329 26.9223 145.16 22.8728 143.891C18.6855 142.578 16.2453 139.7 16.2048 135.318C16.1237 126.408 16.1318 117.499 16.2129 108.589C16.2413 105.691 16.6101 102.792 16.8209 99.8941C16.5575 99.813 16.294 99.7279 16.0305 99.6468C15.5279 100.34 15.0252 101.037 14.5145 101.73C11.7297 105.508 7.85861 106.72 4.30368 104.929C0.671737 103.1 -0.840223 99.3428 0.460954 94.9083C2.43096 88.1835 4.51041 81.4952 6.55744 74.7907C7.18573 72.7275 7.76133 70.6399 8.53555 68.6294C10.1002 64.5677 13.0714 62.2937 17.4898 62.391C20.0313 62.4478 22.5688 62.8531 25.0941 63.1814C26.4237 63.3557 27.7208 63.7611 29.0504 63.9719C36.8169 65.196 43.5903 63.5544 49.5733 58.0213C52.9945 54.8596 57.1088 52.3018 61.2393 50.0845C67.2304 46.8661 73.6025 50.0156 74.5024 56.3513C75.0213 60.0075 73.3877 62.8572 70.4975 65.0785C64.8348 69.436 59.2531 73.9111 53.5255 78.1794C51.3893 79.7725 50.4732 81.5033 50.538 84.2475C50.9272 100.559 50.6272 116.903 51.592 133.177C52.2081 143.627 43.0553 146.757 35.8603 142.926C35.2725 142.614 34.6726 142.326 34.02 142.002V141.998ZM46.1724 114.957C45.8684 102.545 45.69 92.16 45.3171 81.783C45.2117 78.901 46.2251 77.0242 48.5113 75.3258C54.3565 70.9764 60.0395 66.4161 65.7711 61.9167C66.7197 61.1709 67.6682 60.3886 68.4627 59.4846C69.4234 58.3902 69.7233 57.1133 68.791 55.7797C67.8384 54.4218 66.5292 53.7368 64.9564 54.288C63.5701 54.7704 62.2 55.4473 61.0042 56.2945C57.3723 58.8645 53.7809 61.4992 50.2665 64.2232C47.0115 66.7485 43.5417 69.0145 39.403 69.2577C35.1225 69.5049 30.7934 69.132 26.5048 68.8158C24.3686 68.6618 22.2851 67.8795 20.1529 67.6565C15.5198 67.1742 14.1578 68.0902 12.7634 72.5815C10.3677 80.3035 8.06129 88.0578 5.71836 95.8001C5.56433 96.3149 5.16303 96.9472 5.32922 97.3282C5.77511 98.3538 6.26558 99.6185 7.12898 100.101C7.6681 100.405 9.21654 99.7157 9.75971 99.0348C10.6555 97.9038 11.2352 96.4648 11.7135 95.0745C13.2133 90.7453 14.5996 86.3756 16.0427 82.0262C16.3832 81.0047 16.5412 79.7927 17.2101 79.0509C17.8181 78.374 19.026 77.8754 19.9259 77.9403C20.6029 77.9889 21.5433 78.9537 21.7662 79.6914C22.1067 80.8142 21.9729 82.0951 21.9608 83.3071C21.7905 96.3919 21.5919 109.477 21.4338 122.565C21.3852 126.615 21.3528 130.672 21.4663 134.722C21.5392 137.409 23.7281 139.233 26.6223 139.298C29.1031 139.355 30.9393 137.766 31.2717 135.18C31.3933 134.248 31.3244 133.291 31.3244 132.347C31.3244 125.054 31.3244 117.758 31.3244 110.466C31.3244 108.71 31.3366 106.955 31.3609 105.2C31.3811 103.725 32.2324 103.007 33.6146 102.845C35.0577 102.675 36.0103 103.433 36.3021 104.746C36.5615 105.914 36.5453 107.154 36.5453 108.362C36.5656 116.87 36.5251 125.383 36.5737 133.891C36.594 137.19 38.6572 139.25 41.7622 139.302C44.8956 139.355 46.1603 137.884 46.1724 134C46.1967 126.984 46.1805 119.963 46.1805 114.969L46.1724 114.957Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M34.182 60.5549C25.1792 60.5386 18.1828 53.6193 18.3733 44.7299C18.5881 34.7178 27.0965 28.7024 34.4739 29.0266C43.3713 29.4198 50.5623 36.2703 50.2947 45.0299C49.9826 55.3096 41.5148 61.3615 34.182 60.5549ZM34.3482 55.3137C40.088 55.2893 45.1508 50.3846 45.0738 44.9245C44.9927 39.2212 40.1326 34.3692 34.4779 34.3489C28.3895 34.3246 23.5334 39.0915 23.6307 44.9934C23.7239 50.7697 28.4666 55.338 34.3482 55.3137Z"
+                            fill="#8661C5" />
+                    </svg>
+                    <h4 class="section-6-card-heading">Technical Enablement Training Days</h4>
+                    <p class="text-center h-100 section-text-style">Technical Enablement Training Days - a series of
+                        hands-on technical skilling events for all Microsoft for Startups
+                        Founders Hub startups inIsrael, available as a free program benefit. These sessions are ideal
+                        for technical founders,
+                        developers and team members looking to learn more about building software on Microsoft Azure
+                        utlizing key Founders Hub
+                        benefits such as Azure credits, GitHub Enterprise licensing, OpenAI etc.</p>
+                </div>
+                <div class="section-6-cards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="134" height="133" viewBox="0 0 134 133" fill="none">
+                        <path
+                            d="M49.8686 0.0244547C62.74 -0.114654 73.3896 3.78815 82.8065 11.2073C85.2332 13.12 85.7317 14.5188 84.6884 15.9447C83.6644 17.3396 82.0916 17.1155 79.7306 15.2414C61.3296 0.627261 36.12 1.53148 19.1101 17.7608C4.65438 31.5442 0.89071 52.7892 9.54251 70.2203C17.0157 85.2711 29.0796 94.2591 45.846 96.0907C63.7795 98.0498 78.0575 91.0867 88.4249 76.5421C96.4005 65.3515 98.3751 52.7931 95.1678 39.4309C94.9862 38.6812 94.7853 37.9316 94.6616 37.1742C94.4336 35.7445 94.8162 34.5505 96.3542 34.1873C97.8341 33.8356 98.8388 34.593 99.3605 35.957C99.6812 36.7956 99.9671 37.6573 100.156 38.5306C104.106 56.6997 99.9439 72.8286 87.1498 86.2796C78.7337 95.1247 68.1344 100.044 55.8078 101.199C39.6441 102.714 25.8414 97.6518 14.4963 86.3029C-5.00598 66.789 -4.70458 34.6239 14.6431 14.9825C23.635 5.85155 38.0675 -0.477879 49.8725 0.0283226L49.8686 0.0244547Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M11.5133 50.8686C10.6825 34.5619 22.0199 17.7298 39.9726 12.6871C51.7737 9.37164 62.8715 11.3887 73.1462 18.0196C73.6833 18.3674 74.1702 18.7963 74.6764 19.1943C75.9786 20.2221 76.396 21.5205 75.3836 22.8884C74.3403 24.2988 72.9685 24.0013 71.6083 23.2207C68.9382 21.6944 66.3685 19.9091 63.5438 18.746C43.2455 10.3956 20.7988 23.298 16.9347 44.458C13.6038 62.7006 24.2958 77.4924 38.8559 83.0413C53.9608 88.8028 71.6199 82.74 80.1751 68.7209C83.4673 63.3266 85.295 57.5381 85.1907 51.1816C85.1791 50.4126 85.1328 49.6205 85.2681 48.8708C85.5231 47.445 86.4311 46.5021 87.8995 46.5446C89.4142 46.5871 90.0827 47.5879 90.1678 49.1065C90.5735 56.2165 89.1669 62.9517 85.7819 69.1923C76.2916 86.6852 56.5034 94.4174 37.6812 87.9913C20.9881 82.2956 10.7636 65.9735 11.5133 50.8647V50.8686Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M63.1534 46.9389C76.844 33.2522 90.353 19.7431 104.113 5.98296C102.741 5.93273 101.289 5.84771 99.8357 5.82838C97.5211 5.79747 95.2026 5.84385 92.888 5.79362C91.2689 5.75884 90.0826 5.0285 90.1676 3.26259C90.2488 1.56237 91.3809 0.816593 93.0425 0.843642C93.4289 0.85137 93.8153 0.832038 94.2018 0.832038C99.2174 0.832038 104.237 0.804997 109.253 0.839774C113.36 0.870687 113.847 1.38074 113.87 5.6081C113.897 10.3687 113.878 15.1294 113.874 19.89C113.874 20.5314 113.893 21.1806 113.839 21.8182C113.704 23.3793 113.124 24.5965 111.297 24.5694C109.473 24.5385 108.893 23.3831 108.897 21.7525C108.897 19.179 108.913 16.6054 108.874 14.0319C108.858 12.9422 108.723 11.8526 108.576 9.88186C107.031 11.3657 106.034 12.2776 105.079 13.2398C92.6793 25.7596 80.287 38.2833 67.8908 50.8069C67.2571 51.4484 66.6505 52.1207 65.9742 52.708C63.764 54.6324 62.2725 54.5396 60.5181 52.1748C58.1456 48.9753 55.9121 45.6715 53.5859 42.4372C53.0101 41.6334 52.2914 40.934 51.4026 39.9139C47.1946 44.9682 43.1913 49.779 39.1804 54.586C37.4531 56.6572 35.7722 58.7747 33.9638 60.7725C32.5379 62.3491 31.0309 62.5771 29.9451 61.6149C28.9945 60.7764 29.0177 58.9293 30.2156 57.4687C36.4136 49.9259 42.6156 42.3831 48.9064 34.9176C51.1978 32.1972 52.5348 32.3247 54.6253 35.1803C56.7506 38.0862 58.8025 41.0422 60.9045 43.9674C61.7122 45.088 62.57 46.1738 63.1496 46.9389H63.1534Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M115.084 126.413C118.983 122.514 122.684 118.816 126.626 114.874C125.83 114.013 124.929 112.973 123.956 111.995C116.139 104.159 108.306 96.3418 100.485 88.5092C99.7585 87.7828 98.7268 87.1297 98.4447 86.2487C98.1433 85.3059 98.2283 83.9186 98.75 83.1149C99.4455 82.0407 100.782 82.1643 101.841 82.9449C102.46 83.397 103.004 83.9534 103.549 84.4982C112.653 93.5944 121.761 102.687 130.845 111.798C133.817 114.781 133.821 115.446 130.911 118.383C126.746 122.591 122.568 126.783 118.349 130.937C115.702 133.542 114.991 133.53 112.336 130.883C102.769 121.343 93.2204 111.779 83.6682 102.223C83.305 101.86 82.9302 101.504 82.5979 101.114C81.6357 99.9896 81.4811 98.7492 82.509 97.6518C83.5369 96.5544 84.7927 96.5351 85.9519 97.5204C86.7325 98.185 87.4512 98.9308 88.1815 99.6572C96.1919 107.664 104.195 115.674 112.209 123.677C113.194 124.662 114.226 125.597 115.084 126.409V126.413Z"
+                            fill="#8661C5" />
+                    </svg>
+                    <h4 class="section-6-card-heading">Founders Hub
+                        Discovery Days</h4>
+                    <p class="text-center h-100 section-text-style">Founders Hub Discovery Days - Founders Hub Discovery
+                        days are a unique set of events designed for technical founders and
+                        CTOs in early-stage SaaS startups. Led by the Microsoft for Startups team, eachDiscovery Day
+                        focuses on a key
+                        technology/domain in the Microsoft Cloud investment strategy, providing founders with a deep
+                        technical overview and
+                        roadmap, internal best practices from the Microsoft Cloud product team and vast networking
+                        opportunities relevant SaaS
+                        startups from the ecosystem.</p>
+                </div>
+                <div class="section-6-cards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="132" height="134" viewBox="0 0 132 134" fill="none">
+                        <path
+                            d="M19.0113 104.767C23.0396 109.733 27.1012 113.92 32.1597 117.568C34.2607 115.844 36.3801 114.381 38.1524 112.58C40.4823 110.216 42.6718 109.733 45.6478 111.531C47.7119 112.779 50.1673 113.425 52.5008 114.178C54.4393 114.806 55.7021 115.648 55.6799 118.007C55.6541 120.322 56.1784 122.634 56.315 124.956C56.4258 126.891 57.2713 127.966 59.2393 127.973C63.5372 127.988 67.8388 128.098 72.1293 127.91C74.9133 127.788 75.4746 127.017 75.6702 124.255C75.8106 122.294 75.8143 120.322 75.9804 118.365C76.1687 116.15 76.8703 114.477 79.4881 113.905C81.6112 113.44 83.7602 112.554 85.5805 111.365C88.863 109.22 91.4402 109.814 94.0544 112.45C95.6827 114.09 97.6175 115.426 99.5191 116.985C104.714 113.514 108.787 109.19 112.512 103.91C110.674 101.661 108.975 99.2798 106.959 97.2084C105.128 95.3253 104.891 93.5677 106.036 91.2526C107.284 88.7308 108.407 86.1092 109.237 83.4249C109.943 81.1393 111.335 80.3307 113.535 80.2125C115.736 80.0981 117.925 79.7251 120.126 79.6254C122.113 79.5331 123.006 78.6839 122.977 76.6642C122.947 74.7036 123.098 72.7355 123.202 70.7749C123.246 69.922 123.257 69.0432 123.482 68.2309C123.822 67.0013 124.845 66.2924 126.001 66.658C126.757 66.898 127.836 67.906 127.813 68.5374C127.662 73.0642 127.389 77.5947 126.879 82.0919C126.676 83.8938 124.823 83.9713 123.353 84.1375C120.311 84.4809 117.261 84.7836 114.093 85.116C112.922 87.8704 111.778 90.5658 110.485 93.6157C112.394 95.9493 114.396 98.3862 116.386 100.838C118.516 103.459 118.597 103.873 116.659 106.602C112.572 112.362 107.657 117.324 101.897 121.419C99.7738 122.926 99.1646 122.87 96.9972 121.194C94.479 119.244 92.0162 117.221 89.4464 115.161C86.9873 116.187 84.65 117.225 82.2611 118.137C80.9798 118.624 80.7583 119.54 80.6771 120.729C80.4888 123.417 80.1121 126.097 79.9792 128.789C79.8832 130.731 78.9343 131.713 77.1177 132.027C69.7957 133.283 62.4701 133.438 55.1224 132.201C53.1137 131.865 52.1316 130.853 52.0245 128.771C51.899 126.326 51.4633 123.893 51.3414 121.449C51.2565 119.769 50.6879 118.687 49.0226 118.129C46.822 117.391 44.6694 116.501 42.2435 115.581C39.9653 117.513 37.665 119.514 35.3056 121.445C32.8206 123.479 32.0711 123.52 29.4569 121.666C23.9073 117.723 19.0298 113.082 15.0863 107.506C13.0666 104.652 13.1146 104.139 15.3153 101.381C16.6962 99.6527 18.0439 97.8914 19.5393 96.2668C20.6802 95.0262 21.0236 93.9148 20.1633 92.3271C19.0593 90.2889 18.2027 88.1178 17.2094 85.932C14.0968 85.6181 11.058 85.2858 8.0192 85.0052C4.96194 84.7246 4.52255 84.4624 4.04994 81.3165C3.52193 77.8088 3.19331 74.2679 2.85362 70.7343C2.78715 70.0291 3.06408 69.2906 3.17116 68.5669C3.3927 67.0715 4.31948 66.4364 5.74841 66.5767C7.09981 66.7096 7.50966 67.6438 7.5835 68.9029C7.73858 71.5946 7.96382 74.2826 8.18905 76.967C8.2592 77.8162 8.42167 78.6544 8.5472 79.5147C10.9841 81.2981 13.8125 80.6519 16.423 80.9067C20.9276 81.3461 20.8981 81.239 22.4267 85.3523C23.1504 87.3018 23.8224 89.3511 24.967 91.0532C26.9055 93.9443 26.3517 96.1671 24.0698 98.5191C22.2901 100.351 20.8279 102.492 19.015 104.759L19.0113 104.767Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M92.9282 86.5965C94.0507 83.9454 94.9812 81.7485 95.9559 79.4445C95.2027 78.9017 94.7522 78.5029 94.239 78.2186C90.4876 76.1472 89.3134 73.5663 90.6094 69.5675C90.8494 68.8327 91.9165 67.9502 92.6476 67.9096C93.3861 67.8653 94.2981 68.6702 94.9036 69.3164C95.247 69.6819 95.2581 70.4942 95.1953 71.0813C94.9996 72.8943 96.0667 73.6512 97.4846 74.4118C101.513 76.5755 101.76 77.0666 100.283 81.3497C99.3677 84.0045 98.1972 86.5965 96.8679 89.0704C95.3356 91.9283 94.7227 92.0464 91.4845 91.1566C90.5356 90.8981 89.6014 90.5953 88.682 90.3184C86.5208 91.7092 85.77 93.5554 86.4297 95.8569C87.4857 99.5456 87.4414 99.9776 84.0444 101.706C81.3306 103.083 78.4653 104.235 75.5594 105.158C72.2585 106.21 71.9816 105.952 70.3274 102.991C69.9102 102.241 69.5409 101.44 68.9945 100.794C67.6209 99.1726 64.9624 99.2871 64.1464 101.244C61.8018 106.849 60.4467 106.129 54.7937 104.242C52.6042 103.511 50.5143 102.4 48.502 101.244C46.2423 99.9443 46.0798 99.2834 46.737 96.6914C46.9475 95.8606 47.3241 95.0705 47.505 94.236C47.9814 92.0354 46.1463 90.1966 43.9161 90.599C43.6761 90.6433 43.4398 90.7209 43.2072 90.7947C38.0047 92.3898 37.9677 91.9578 35.6009 87.3313C34.4379 85.0568 33.5886 82.5867 32.8908 80.1202C31.9492 76.7934 32.2077 76.4426 35.1062 74.8549C35.4311 74.6777 35.7449 74.4783 36.0883 74.349C37.6539 73.762 38.396 72.7392 38.3148 70.9816C38.2668 69.9145 38.385 68.6702 38.913 67.7988C39.3044 67.1527 40.4933 66.6616 41.2982 66.7059C41.8853 66.7354 42.8379 67.7102 42.897 68.3305C43.1001 70.5238 43.1407 72.7613 42.9192 74.9509C42.8416 75.73 41.9481 76.5571 41.2281 77.1035C40.1831 77.8937 38.961 78.4512 37.6871 79.1786C38.0933 80.5596 38.3037 81.778 38.8022 82.8599C39.9727 85.4076 40.0281 86.9768 43.9419 85.4851C45.9653 84.7134 47.4238 85.463 49.126 86.9547C52.4454 89.8606 54.3433 92.7664 51.2675 97.3966C53.9334 98.5708 56.2042 99.5677 58.8036 100.712C60.5316 97.2637 61.8166 93.4754 66.5649 95.0003C71.1434 93.6083 72.8123 96.9831 74.6622 100.557C77.1065 99.5345 79.3035 98.6114 81.7293 97.5997C81.05 94.0403 78.7829 90.2963 83.4278 88.0956C85.7392 83.89 89.2802 85.0974 92.9393 86.5965H92.9282Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M65.52 61.1304C45.3561 61.1304 25.1885 61.1304 5.02467 61.1304C4.04251 61.1304 3.05297 61.1747 2.0745 61.075C0.830177 60.9495 -0.196293 60.1704 0.0326317 58.9556C0.202479 58.0547 1.07018 57.0947 1.88619 56.574C2.51758 56.1716 3.55512 56.3673 4.41175 56.3673C45.1124 56.3599 85.8131 56.3599 126.51 56.3673C127.37 56.3673 128.249 56.334 129.084 56.4928C130.439 56.7513 131.31 57.5599 131.133 59.0553C130.985 60.2885 130.313 61.0861 128.969 61.1045C127.987 61.1193 127.001 61.1304 126.019 61.1304C105.855 61.1304 85.6875 61.1304 65.5237 61.1304H65.52Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M64.7446 28.8816C58.2239 29.6237 51.1198 22.8372 51.1789 14.9541C51.2306 7.38476 57.1605 0.598242 64.8849 0.502241C72.2732 0.413625 78.4321 6.89368 78.4764 14.6587C78.5244 22.7486 72.6055 28.8779 64.7446 28.8816ZM56.086 14.8876C56.1192 20.308 59.8227 24.1886 64.8886 24.1074C69.8289 24.0261 73.7428 19.8353 73.6985 14.6697C73.6579 9.69986 69.3304 5.15828 64.7409 5.26905C59.974 5.38351 56.0565 9.73678 56.086 14.8876Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M116.142 15.0241C116.862 21.4598 110.522 29.0882 102.628 29.0328C96.543 28.9922 88.9589 23.5091 88.9737 14.9539C88.9885 6.94522 95.1177 0.365473 102.646 0.50209C110.33 0.642399 116.744 7.3883 116.142 15.0204V15.0241ZM111.371 14.7434C111.357 9.61848 107.321 5.2689 102.569 5.26152C97.9498 5.25413 93.7294 9.83632 93.759 14.8173C93.7922 20.005 97.7245 23.9595 102.702 24.1441C106.575 24.2881 111.77 20.6106 111.368 14.7434H111.371Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M28.364 28.8814C20.8132 28.8556 14.503 22.682 14.7061 15.0019C14.935 6.3803 20.6913 0.587017 28.7074 0.52794C36.3358 0.472555 42.118 6.96 42.0515 15.1201C41.9851 23.0069 36.1179 28.9073 28.364 28.8814ZM28.5265 24.1072C33.4004 24.0371 37.3253 19.7946 37.2773 14.6438C37.2293 9.64063 32.8945 4.97721 28.305 5.31321C23.0951 5.69722 19.5652 9.49294 19.5356 14.9133C19.5024 20.917 24.6237 24.6315 28.5265 24.1072Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M66.6978 32.2378C72.037 32.068 77.7749 32.4926 83.3429 34.1985C85.082 34.7302 86.8322 35.4391 88.3497 36.4139C89.4094 37.097 90.6353 38.2748 90.8347 39.401C91.3848 42.5099 91.5768 45.7112 91.5731 48.8718C91.5731 49.5697 90.2882 50.5998 89.4057 50.8805C88.1392 51.2792 87.3232 50.2269 87.1386 49.0491C86.8912 47.4798 86.6438 45.8478 86.8026 44.2859C87.1017 41.3838 85.658 39.7776 83.1435 39.1647C79.5841 38.2933 75.9693 37.3111 72.3397 37.1191C65.3649 36.7536 58.3495 36.7166 51.4632 38.345C50.8651 38.4853 50.2632 38.6071 49.6725 38.7659C44.2853 40.2133 43.6576 40.937 43.0521 46.4312C42.945 47.4023 43.0078 48.4251 42.7309 49.3408C42.3764 50.5112 41.3795 51.3014 40.1905 50.8694C39.4336 50.5962 38.4588 49.6546 38.3997 48.9457C38.108 45.5007 38.3222 41.9893 40.0576 38.9468C40.8367 37.5807 42.4059 36.425 43.8792 35.7382C49.4214 33.1572 55.4436 32.6735 61.4399 32.2563C63.0313 32.1455 64.6338 32.2378 66.6904 32.2378H66.6978Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M55.3624 70.8006C55.2627 77.4025 60.4024 83.0518 66.7495 82.7305C74.1527 82.3539 77.8339 77.1772 78.1072 71.0738C78.1219 70.7083 78.0112 70.3427 78.0149 69.9772C78.0259 67.9649 78.7755 66.8941 80.2266 66.7796C81.6444 66.6651 82.4863 67.6215 82.826 69.7335C83.9558 76.7194 78.8198 84.5287 71.5606 86.7219C60.1329 90.1743 50.0269 81.224 50.5919 70.8227C50.6362 69.9735 50.7211 69.1021 50.9611 68.2898C51.3266 67.0455 52.3014 66.643 53.5457 66.7353C54.9451 66.8424 55.4104 67.7655 55.4916 68.9655C55.5322 69.571 55.4104 70.1876 55.3624 70.8006Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M28.0354 32.2821C29.8779 32.2821 31.724 32.212 33.5591 32.3043C35.121 32.3818 36.1364 33.2495 35.9924 34.8963C35.8668 36.3215 34.9179 37.0046 33.4594 36.9972C30.8822 36.9825 28.2717 36.7609 25.7277 37.06C20.8796 37.6323 16.0501 38.4151 11.25 39.3013C8.26291 39.8551 6.50535 41.6644 6.58289 44.9542C6.61243 46.1616 6.22104 47.3727 6.11027 48.5875C5.98104 49.998 5.41242 50.9912 3.88379 50.9543C2.4364 50.9174 1.39885 49.8983 1.52808 48.6133C1.86039 45.3641 1.47269 41.945 3.25979 38.9542C4.75888 36.4434 7.25121 35.4058 9.89861 34.6969C12.2617 34.0655 14.6322 33.3603 17.047 33.028C20.6802 32.5332 24.3541 32.3338 28.0095 32.0126L28.0317 32.2821H28.0354Z"
+                            fill="#8661C5" />
+                        <path
+                            d="M103.337 32.2379C109.621 32.2158 115.765 33.0429 121.824 34.8152C126.595 36.2109 129.017 39.1832 129.213 44.083C129.276 45.6744 129.53 47.2916 129.32 48.8461C129.217 49.6067 128.234 50.8363 127.68 50.8178C126.783 50.7919 125.491 50.1089 125.133 49.3445C124.594 48.1925 124.575 46.7267 124.583 45.3974C124.597 41.886 122.803 39.8109 119.513 39.1869C114.953 38.3266 110.356 37.6177 105.752 37.0527C103.573 36.7869 101.321 36.8386 99.1313 37.0527C96.7719 37.2817 95.3393 36.089 95.3578 34.553C95.3799 32.9616 96.5245 32.3007 99.2864 32.2453C100.638 32.2195 101.989 32.2416 103.337 32.2416V32.2379Z"
+                            fill="#8661C5" />
+                    </svg>
+                    <h4 class="section-6-card-heading">Founders Hub Growth Events & Azure Technical Advisory</h4>
+                    <p class="text-center h-100 section-text-style">Founders Hub Growth Events & Azure Technical
+                        Advisory - an in-depth1:1 session with an expert Microsoft engineer or
+                        localized specialist from across the local ecosystem, specializing in Azure technologies and
+                        services. Founders can dive
+                        deeper into a wide range of topics, such as: Onboarding azure services, architecture review,
+                        design review,
+                        implementation review, deployment review, cost optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-7">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <div class="section-7-description">
+                    <h2 class="section-heading">Ecosystem Events & Partnership</h2>
+                    <p class="section-text-style text-center">Microsoft for Startups is working together with top
+                        organizations inIsrael’s startup ecosystem, in the mission to
+                        co-create high level value for our startup community. These partnerships vary from launching new
+                        programs together,
+                        collaborating in designing meaningful content experiences or by joiningMfS on-going programs and
+                        sharing their implicit
+                        knowledge, network connections, and expertise with our Founders Hub community.</p>
+                </div>
+                <div class="section-7-collage">
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-1.png" alt="">
+                    </div>
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-2.png" alt="">
+                    </div>
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-3.png" alt="">
+                    </div>
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-4.png" alt="">
+                    </div>
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-5.png" alt="">
+                    </div>
+                    <div class="section-7-collage-img-container">
+                        <img src="./assets/images/collage-6.png" alt="">
+                    </div>
+                </div>
+                <h4 class="section-7-subheading">Take an Active Part!</h4>
+                <div class="section-7-cards-row">
+                    <div class="section-7-cards">
+                        <svg class="h-100" xmlns="http://www.w3.org/2000/svg" width="140" height="128"
+                            viewBox="0 0 140 128" fill="none">
+                            <path
+                                d="M46.2713 66.2598C50.7881 62.3441 55.6055 61.2821 60.5752 64.6446C66.2943 68.5122 67.3724 73.8626 64.7393 79.4134C67.5448 82.0706 70.3342 84.1506 72.3822 86.8038C74.6947 89.8016 73.8972 93.3766 72.5746 96.651C74.5624 97.9815 76.5904 99.0035 78.1975 100.478C83.0069 104.887 83.3115 111.384 78.975 116.177C76.5623 118.846 74.0094 121.403 71.3442 123.816C64.6992 129.828 55.341 127.202 52.5275 118.61C52.243 117.74 52.0225 116.846 51.7901 116.025C41.8307 112.855 40.3638 111.568 38.5724 104.238C37.5985 104.029 36.4643 103.785 35.33 103.544C30.0277 102.422 26.4047 99.5326 25.4107 93.9737C25.1422 92.4748 24.4609 91.8576 22.9139 91.4087C20.6655 90.7595 18.2808 89.8497 16.5214 88.3748C11.4836 84.1546 10.3815 77.5938 15.2429 72.1512C18.878 68.0793 22.8337 64.2759 26.8175 60.5326C32.1959 55.4868 40.7726 56.5248 44.532 63.3782C45.0329 64.2879 45.6061 65.1576 46.2754 66.2518L46.2713 66.2598ZM38.0754 98.5346C38.8449 98.0898 40.5282 97.5086 41.6904 96.3904C46.8845 91.3887 51.9745 86.2747 57.0042 81.1047C58.1906 79.8823 59.1685 78.3754 59.9299 76.8444C61.505 73.6822 60.7756 71.2655 57.894 69.1975C55.2047 67.2657 52.9964 67.3779 50.3994 69.9269C44.3917 75.8224 38.4762 81.806 32.5286 87.7576C30.705 89.5812 29.5468 91.6933 30.8493 94.2142C32.1318 96.695 34.1598 98.3703 38.0714 98.5346H38.0754ZM51.5536 110.149C52.4554 109.644 54.1547 109.067 55.3651 107.949C58.6915 104.883 61.8577 101.637 64.9878 98.3663C65.9817 97.3283 66.7272 96.0257 67.4766 94.7753C69.5527 91.3206 68.2942 89.2085 65.8936 87.0883C63.4889 84.9642 60.9279 84.876 58.395 87.2486C54.0224 91.3446 49.8263 95.629 45.6582 99.9333C43.9228 101.725 43.5821 104.097 44.7243 106.238C45.9507 108.53 47.9707 110.097 51.5456 110.149H51.5536ZM25.1101 86.3469C25.4708 86.2026 26.6652 86.0623 27.3545 85.397C31.5667 81.3331 35.819 77.2933 39.7386 72.9528C42.0632 70.3758 41.2015 66.8449 38.1956 64.1436C35.7749 61.9674 33.0416 62.0756 30.4566 64.5965C26.8375 68.1274 23.2906 71.7384 19.7156 75.3134C18.0564 76.9726 16.7058 78.704 17.7799 81.281C18.9141 84.0023 21.8518 86.2908 25.1101 86.3469ZM76.7467 109.452C76.6144 106.017 75.1516 104.238 72.9112 103.031C70.6148 101.797 68.5227 102.33 66.7312 104.073C64.1582 106.578 61.5611 109.063 59.1284 111.704C56.5955 114.454 56.7077 117.323 59.1925 119.828C61.8337 122.485 64.7433 122.549 67.5808 119.86C70.0897 117.484 72.5545 115.051 74.8951 112.506C75.8249 111.496 76.3539 110.121 76.7507 109.452H76.7467Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M48.9447 39.0306C53.169 43.323 59.8901 43.5995 64.5592 39.8602C66.8436 38.0327 69.0559 36.0448 70.9837 33.8525C74.8031 29.5161 79.5403 28.7145 84.8266 29.8327C87.5599 30.4098 90.2412 31.2475 92.9264 32.041C98.3409 33.6441 103.471 33.2995 108.208 29.961C108.641 29.6564 109.118 29.4039 109.587 29.1554C110.833 28.4941 111.979 28.7426 112.801 29.8127C113.759 31.0591 113.583 32.4097 112.384 33.3756C109.094 36.0208 105.399 38.0086 101.118 38.0046C97.6837 38.0006 94.245 37.3874 90.8223 36.9145C89.5158 36.7341 88.2252 36.2732 86.9868 35.7923C81.3599 33.6081 76.6908 34.4978 72.7391 39.4194C69.5208 43.4272 65.509 46.5052 60.1706 47.3909C56.3672 48.0201 52.688 47.6314 49.2012 46.0924C43.2136 43.4552 42.2196 38.2932 46.7926 33.6842C55.261 25.1516 63.7335 16.619 72.3062 8.19056C77.8049 2.79204 84.6703 0.463509 92.237 0.0627281C106.729 -0.70677 117.999 5.65762 127.289 16.1701C133.405 23.0876 137.834 30.9349 139.405 40.1528C141.064 49.8757 138.319 58.3643 131.834 65.6985C131.321 66.2797 130.64 66.937 129.942 67.0732C129.141 67.2295 128.003 67.1133 127.434 66.6244C126.852 66.1274 126.528 65.0212 126.564 64.2036C126.596 63.5143 127.197 62.7528 127.726 62.1917C136.082 53.3705 136.307 43.359 131.794 32.8466C127.622 23.1276 120.777 15.5048 111.855 9.94998C102.02 3.82606 84.8346 1.95441 73.6168 14.09C66.7314 21.5406 59.3089 28.4941 52.135 35.6801C51.113 36.7021 50.1391 37.7762 48.9407 39.0346L48.9447 39.0306Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M114.697 92.8755C112.869 101.48 109.078 104.47 99.7956 104.638C99.2505 105.817 98.6894 107.131 98.0442 108.406C96.6615 111.147 94.5333 113.131 91.5996 114.037C90.2049 114.466 88.5697 114.594 87.8163 112.822C87.0868 111.103 88.0407 110.069 89.4995 109.316C90.3211 108.891 91.2149 108.518 91.8922 107.917C94.9542 105.195 95.0584 101.552 92.1166 98.4584C87.8884 94.0137 83.564 89.6653 79.3478 85.2086C78.5743 84.387 77.8649 83.3129 77.6284 82.2428C77.4761 81.5495 78.0332 80.3311 78.6464 79.9423C79.2636 79.5496 80.3577 79.8261 81.2234 79.9503C81.5561 79.9984 81.8526 80.4193 82.1332 80.7038C86.8303 85.441 91.5275 90.1783 96.2126 94.9275C97.0543 95.7812 97.7676 96.7671 98.6614 97.5526C101.331 99.8972 104.673 99.7729 107.286 97.3162C109.651 95.0958 109.743 91.8615 107.19 89.1402C102.357 83.9862 97.3588 78.9804 92.4533 73.8905C91.6277 73.0369 90.6538 72.1672 90.253 71.1091C89.9404 70.2875 90.0727 68.6884 90.6217 68.2956C91.3992 67.7426 92.7459 67.9189 93.848 67.9149C94.1566 67.9149 94.5013 68.3397 94.7738 68.6203C99.2024 73.2413 103.615 77.8743 108.044 82.4913C109.15 83.6455 110.244 84.8318 111.47 85.8498C113.963 87.9098 116.632 87.8898 118.664 85.93C120.933 83.7417 121.45 80.303 119.562 77.9625C117.642 75.5818 115.474 73.3976 113.358 71.1813C106.725 64.2438 100.056 57.3383 93.4152 50.4048C92.6817 49.6393 91.768 48.8738 91.4554 47.94C91.1588 47.0463 91.1748 45.4311 91.7199 45.0303C92.4934 44.4572 93.9081 44.4933 94.9782 44.6817C95.6275 44.7939 96.1725 45.6556 96.7176 46.2247C103.631 53.4467 110.541 60.6728 117.438 67.9109C119.278 69.8386 121.057 71.8265 122.893 73.7543C126.219 77.2491 126.656 81.2889 124.981 85.6013C123.418 89.6252 120.58 92.2142 116.087 92.615C115.695 92.6511 115.306 92.7553 114.693 92.8675L114.697 92.8755Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M0.00124973 38.9544C0.385999 28.6584 5.78852 19.0036 14.5496 11.1002C21.6875 4.66765 30.0838 0.691905 39.7467 0.162875C46.1191 -0.185804 52.1548 1.57362 57.5934 5.02835C58.9921 5.91808 60.2185 7.06431 59.3007 8.97203C58.5553 10.5231 57.0644 10.5591 54.832 9.56118C51.8101 8.21455 48.7722 6.81583 45.6101 5.91007C41.2696 4.66364 36.841 5.30088 32.6568 6.75972C18.858 11.5611 9.632 20.8151 5.89673 35.1149C3.90485 42.7378 5.8286 49.6112 10.4576 55.8313C11.0949 56.6849 11.8203 57.4705 12.4695 58.3161C13.9083 60.1958 14.0246 61.9512 12.6779 62.8289C10.9305 63.9671 9.59994 62.9492 8.52184 61.6707C7.06701 59.9393 5.56809 58.2079 4.39781 56.2882C1.50418 51.5349 -0.0388283 46.3448 0.00124973 38.9544Z"
+                                fill="#FAF9FD" />
+                        </svg>
+                        <p class="h-100 section-7-card-text">Partnerships with MfS</p>
+                    </div>
+                    <div class="section-7-cards">
+                        <svg class="h-100" xmlns="http://www.w3.org/2000/svg" width="127" height="127"
+                            viewBox="0 0 127 127" fill="none">
+                            <path
+                                d="M51.5019 126.707C38.4011 126.707 25.3004 126.707 12.2034 126.707C11.2133 126.707 10.2233 126.748 9.2369 126.681C3.99364 126.322 0.571056 123.007 0.0556293 117.767C-0.0407815 116.788 0.0185482 115.791 0.0185482 114.804C0.0185482 91.447 0.0185482 68.0896 0.0222563 44.7322C0.0222563 43.5012 -0.0259491 42.2441 0.189121 41.039C0.415315 39.7745 1.44246 39.0551 2.6513 39.4148C3.43742 39.6521 4.36074 40.4197 4.63143 41.1613C4.99112 42.1514 4.802 43.3528 4.802 44.4653C4.80571 67.4518 4.802 90.4384 4.80571 113.425C4.80571 114.537 4.74267 115.657 4.83909 116.758C5.13573 120.096 6.66347 121.594 10.0304 121.876C11.0131 121.957 12.0069 121.913 12.9969 121.913C38.7015 121.913 64.4098 121.913 90.1144 121.913C90.856 121.913 91.5976 121.931 92.3392 121.902C96.4219 121.746 97.3155 120.934 97.7902 116.97C97.894 116.113 97.9051 115.242 98.0386 114.393C98.2129 113.284 98.9323 112.45 100.019 112.628C100.857 112.761 101.98 113.328 102.31 114.022C104.087 117.745 101.294 124.523 97.3637 125.851C95.5393 126.466 93.4962 126.663 91.5494 126.67C78.2039 126.737 64.8548 126.707 51.5093 126.707H51.5019Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M62.0626 76.4403C62.0515 56.6909 78.7046 44.7434 93.2515 44.3652C110.631 43.9128 126.376 58.2038 126.176 76.5923C125.994 93.0934 113.802 108.274 94.4196 108.486C74.3031 108.705 61.9848 92.5075 62.0663 76.4403H62.0626ZM94.2304 49.334C81.2224 48.4738 66.8461 60.0319 66.8609 76.3921C66.872 90.0083 77.1398 103.736 94.1637 103.669C111.176 103.602 121.329 89.9489 121.355 76.6554C121.389 60.4806 107.854 48.7482 94.2304 49.3303V49.334Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M68.0624 0.0458909C75.6009 0.0458909 83.1358 0.0236422 90.6744 0.0533071C99.6295 0.08668 102.466 2.74168 102.652 11.7116C102.818 19.7396 102.689 27.7751 102.689 35.8069C102.689 36.1777 102.707 36.5522 102.666 36.9193C102.429 38.9921 101.598 39.9822 100.093 39.8895C98.0202 39.7634 97.9163 38.2245 97.9163 36.6783C97.9052 29.2658 97.9237 21.8496 97.8978 14.437C97.8904 12.7128 97.8273 10.9774 97.6456 9.26053C97.3527 6.4535 96.2959 5.38185 93.4703 5.01846C92.128 4.84418 90.7597 4.84789 89.4025 4.84789C74.3291 4.83676 59.2519 4.84047 44.1785 4.83676C43.1921 4.83676 42.1983 4.85901 41.2157 4.76631C39.9364 4.64765 38.9612 3.84299 39.2133 2.6119C39.3987 1.71454 40.233 0.702226 41.0562 0.260961C41.8387 -0.158055 42.9845 0.0533071 43.9708 0.0533071C52.0026 0.0421828 60.0343 0.0458909 68.0661 0.0458909H68.0624Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M34.4632 14.4964C34.4632 18.0784 34.5262 21.6641 34.4483 25.2462C34.3334 30.6674 31.3113 34.268 25.8752 34.5238C18.2291 34.8835 10.5607 34.7389 2.89976 34.6499C2.00611 34.6388 0.660067 33.8045 0.367127 33.0295C0.0778945 32.2693 0.585905 30.8343 1.22741 30.1594C4.9763 26.2214 8.8661 22.4206 12.7114 18.5753C18.04 13.243 23.3685 7.91078 28.7045 2.58594C29.3163 1.9741 29.8911 1.30665 30.5845 0.802343C32.4608 -0.56224 34.326 0.260959 34.4075 2.63044C34.541 6.57957 34.4446 10.5398 34.4446 14.4927H34.4594L34.4632 14.4964ZM29.6797 8.85264C23.6614 13.892 10.7869 27.1151 9.30737 29.6848C14.8955 29.6848 20.3909 29.8331 25.8715 29.618C28.2632 29.5253 29.4869 27.9271 29.6055 25.3685C29.7576 22.1759 29.6686 18.9683 29.6797 15.7683C29.6871 13.7325 29.6797 11.6968 29.6797 8.85635V8.85264Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M41.809 47.5098C48.2314 47.5098 54.6576 47.4949 61.08 47.5172C63.9575 47.5283 64.9735 48.1364 64.9995 49.7383C65.0254 51.3996 63.8759 52.2747 61.232 52.2821C48.1387 52.3155 35.0417 52.308 21.9484 52.2747C21.1252 52.2747 20.0647 52.1783 19.5418 51.6777C18.9374 51.0955 18.485 49.9831 18.574 49.171C18.6407 48.5814 19.6234 47.8917 20.3391 47.6358C21.1103 47.3577 22.0448 47.5172 22.9088 47.5172C29.2088 47.5135 35.5089 47.5172 41.809 47.5172V47.5098Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M37.8709 60.8588C42.8027 60.8588 47.7381 60.8588 52.6699 60.8588C53.5339 60.8588 54.4869 60.6586 55.2359 60.959C56.0443 61.2816 57.2383 62.0973 57.2235 62.6684C57.2012 63.5583 56.4781 64.693 55.7069 65.2159C54.9875 65.7016 53.8194 65.6238 52.8479 65.6275C42.8583 65.6534 32.8686 65.646 22.879 65.6312C22.0224 65.6312 21.1325 65.6163 20.3204 65.3901C18.9892 65.023 18.192 64.0626 18.4144 62.635C18.6184 61.3372 19.6047 60.8663 20.8507 60.8663C24.1805 60.8663 27.5104 60.8551 30.8403 60.8477C33.1838 60.8477 35.5273 60.8477 37.8709 60.8477V60.8588Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M37.8487 74.2082C42.6655 74.2082 47.4824 74.2082 52.2992 74.2082C53.1632 74.2082 54.1347 74.0043 54.8615 74.3306C55.6365 74.6791 56.6191 75.4875 56.7081 76.1958C56.8008 76.93 56.1185 78.0758 55.4363 78.5096C54.6872 78.988 53.5525 78.9731 52.5847 78.9731C42.7026 79.0028 32.8205 78.9954 22.9384 78.9805C22.0818 78.9805 21.1919 78.9731 20.3724 78.7581C19.0375 78.4095 18.2106 77.4788 18.4034 76.0363C18.5777 74.731 19.5418 74.223 20.8025 74.2193C23.5206 74.2119 26.2386 74.2045 28.953 74.2008C31.9157 74.2008 34.8822 74.2008 37.845 74.2008L37.8487 74.2082Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M63.9056 29.3104C59.8452 29.3104 55.7885 29.3142 51.7281 29.3067C50.8679 29.3067 49.8889 29.4996 49.1807 29.1584C48.4242 28.7876 47.4861 27.9273 47.4267 27.2154C47.3674 26.4775 48.0942 25.3761 48.7913 24.9571C49.5552 24.501 50.6787 24.5418 51.6466 24.5381C59.8897 24.5122 68.1291 24.5159 76.3722 24.5307C77.2288 24.5307 78.2596 24.3712 78.8937 24.7791C79.6984 25.2983 80.5698 26.255 80.707 27.1338C80.8887 28.2907 79.9617 29.1732 78.6601 29.2622C77.6812 29.3327 76.6948 29.3067 75.7085 29.3067C71.7705 29.3104 67.8362 29.3067 63.8981 29.3067L63.9056 29.3104Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M52.047 92.2368C50.5785 92.2368 49.0879 92.3963 47.6528 92.1886C46.3587 92.0032 45.3835 91.0725 45.4428 89.6597C45.5059 88.1987 46.4996 87.5646 47.9347 87.5683C50.7491 87.5795 53.5747 87.4645 56.378 87.6499C57.1271 87.7018 58.3952 88.6474 58.4026 89.2036C58.4175 90.0861 57.7723 91.5175 57.064 91.7733C55.5103 92.337 53.7453 92.3147 52.0655 92.5298C52.0581 92.4297 52.0507 92.3333 52.0432 92.2331L52.047 92.2368Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M90.2368 84.5499C94.3417 79.2696 98.1054 74.4342 101.862 69.5877C103.219 67.8375 104.546 66.0613 105.922 64.3222C106.452 63.6473 106.964 62.7351 107.676 62.483C108.596 62.1604 110.046 61.9935 110.646 62.4978C111.232 62.991 111.314 64.4816 111.091 65.4087C110.88 66.2875 110.001 67.0143 109.4 67.793C103.99 74.8161 98.5838 81.843 93.1551 88.855C90.8783 91.7956 89.6361 91.8475 87.4261 89.0478C84.9083 85.8589 82.4609 82.6143 79.9876 79.3919C79.6873 79.0026 79.3832 78.6095 79.1496 78.1794C78.4302 76.8482 78.3041 75.5058 79.7169 74.5974C80.9369 73.8149 82.1198 74.2673 82.9912 75.3279C84.1667 76.7518 85.2605 78.2424 86.3989 79.696C87.5299 81.1385 88.672 82.5735 90.2368 84.5499Z"
+                                fill="#FAF9FD" />
+                        </svg>
+                        <p class="h-100 section-7-card-text">Signup to get Mfs updates</p>
+                    </div>
+                    <div class="section-7-cards">
+                        <svg class="h-100" xmlns="http://www.w3.org/2000/svg" width="129" height="128"
+                            viewBox="0 0 129 128" fill="none">
+                            <path
+                                d="M54.7798 85.2876C56.5511 80.9312 58.3077 76.6337 60.0495 72.3325C60.6461 70.8558 61.2353 69.3755 61.795 67.884C62.2958 66.5473 62.9513 65.4352 64.6158 65.4536C66.1441 65.4683 66.6522 66.5841 67.1383 67.7441C69.1711 72.6013 71.3327 77.407 73.2034 82.3268C74.2566 85.0998 75.737 86.3187 78.8929 86.2745C83.647 86.2082 88.4122 86.79 93.1737 87.1141C94.4957 87.2025 96.0276 86.9963 96.5873 88.6423C97.2134 90.4799 96.0644 91.5221 94.7645 92.6268C90.0141 96.6628 85.3483 100.806 80.4911 105.048C81.8315 110.321 83.1572 115.525 84.4793 120.728C84.7518 121.796 85.2452 122.864 85.2305 123.928C85.2194 124.922 84.9285 126.197 84.2657 126.804C83.7612 127.264 82.4355 127.044 81.5553 126.815C80.7562 126.609 80.0676 125.99 79.3311 125.545C74.2971 122.518 69.2631 119.491 64.0818 116.375C59.3572 119.332 54.6915 122.253 50.0294 125.169C49.1972 125.688 48.4201 126.403 47.5142 126.664C46.5457 126.944 45.1538 127.206 44.4983 126.723C43.8649 126.259 43.5887 124.775 43.7544 123.847C44.3362 120.599 45.1759 117.395 45.9197 114.177C46.4979 111.673 47.0539 109.161 47.6689 106.668C48.0961 104.945 47.6947 103.707 46.207 102.536C42.4508 99.5868 38.8456 96.4456 35.1815 93.3817C34.7138 92.9877 34.2683 92.5605 33.7748 92.1996C32.6075 91.3453 31.5432 90.1964 32.3239 88.8375C32.8137 87.9869 34.1836 87.324 35.2404 87.1841C38.8751 86.7053 42.5465 86.5102 46.1996 86.1714C48.9909 85.9136 51.7786 85.6006 54.7761 85.2913L54.7798 85.2876ZM78.2926 119.17C78.5246 119.019 78.753 118.868 78.985 118.721C78.0938 115.212 77.4199 111.629 76.2525 108.215C75.0484 104.694 75.7112 102.234 78.775 99.9771C81.861 97.705 84.5713 94.921 88.1433 91.743C86.0443 91.4705 84.8917 91.2753 83.728 91.1833C80.318 90.9108 76.9043 90.6088 73.487 90.4689C71.863 90.4026 71.0381 89.6108 70.5299 88.2189C70.2353 87.4161 69.9076 86.6243 69.5688 85.8363C68.0332 82.3011 66.4902 78.7659 64.9288 75.1901C64.4059 75.5142 64.0929 75.5952 64.0156 75.7757C62.8593 78.4749 61.6956 81.1705 60.6092 83.8956C57.8437 90.8261 58.7938 89.8686 51.4251 90.4468C48.0998 90.7082 44.7855 91.1059 41.3608 91.4484C41.6001 92.0855 41.6186 92.3801 41.7732 92.5127C44.0195 94.4091 46.2806 96.2799 48.5417 98.1579C53.5609 102.327 53.5388 102.323 52.099 108.517C51.3109 111.905 50.6112 115.315 49.6869 119.575C53.7929 117.02 57.225 115.134 60.3625 112.844C62.9439 110.958 65.0319 110.944 67.6612 112.774C71.0455 115.127 74.7317 117.057 78.2853 119.167L78.2926 119.17Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M13.5173 92.288C9.71331 89.1026 6.14128 86.1161 2.57293 83.1259C2.00951 82.6546 1.38348 82.2347 0.904757 81.6897C-0.741324 79.8227 -0.07479 77.8305 2.37408 77.407C4.05698 77.1161 5.76935 76.9982 7.47435 76.8509C10.645 76.5784 13.8119 76.2728 16.9863 76.1181C18.6913 76.0334 19.6819 75.2932 20.2674 73.7282C21.4679 70.517 22.7494 67.3353 24.0014 64.1426C24.4028 63.1152 24.8153 62.0914 25.2277 61.0677C25.7138 59.8635 26.384 58.9134 27.8865 58.9503C29.4184 58.9871 29.9266 60.0845 30.4127 61.2445C31.9336 64.857 33.4581 68.4695 34.9753 72.0821C35.2589 72.7597 35.5682 73.4299 35.8076 74.1259C36.4078 75.864 37.612 76.6005 39.4348 76.6079C41.5154 76.6152 43.6034 76.6999 45.6804 76.8767C47.7057 77.0498 48.6706 77.9778 48.5306 79.4913C48.3686 81.2442 47.1276 81.6676 45.6435 81.5793C42.1047 81.362 38.5694 81.0711 35.0306 80.8464C33.5318 80.7507 32.9647 79.6754 32.4712 78.5375C31.348 75.9524 30.2875 73.3415 29.168 70.7564C28.8845 70.1046 28.4867 69.5006 27.8202 68.2965C27.069 69.9462 26.5129 71.1025 26.0121 72.2846C25.3419 73.8607 24.5722 75.4184 24.1046 77.0571C23.3386 79.727 21.6189 80.6955 18.949 80.7802C15.9183 80.8722 12.8987 81.281 9.33033 81.5977C10.0963 82.6214 10.4719 83.3432 11.039 83.844C12.6961 85.2949 14.368 86.7495 16.154 88.0347C18.312 89.585 19.0522 91.3342 18.2015 94.0114C17.2477 97.0126 16.7506 100.161 15.9515 103.711C18.2089 103.277 19.5088 102.002 21.0002 101.115C28.6414 96.5781 26.1962 96.6334 33.5981 100.887C34.8722 101.619 36.1427 102.367 37.38 103.159C39.8105 104.716 40.4107 105.781 39.6926 107.125C38.8677 108.668 37.3137 108.76 34.9238 107.36C33.2298 106.37 31.5653 105.328 29.8714 104.337C29.1349 103.906 28.3615 103.545 27.3083 103.004C23.67 105.273 19.947 107.592 16.224 109.916C15.3917 110.435 14.6258 111.168 13.7236 111.433C12.7624 111.717 11.3852 111.956 10.7223 111.478C10.0816 111.014 9.76487 109.548 9.9269 108.635C10.5014 105.383 11.3557 102.183 12.0775 98.957C12.5599 96.8138 13.0055 94.6595 13.5137 92.2917L13.5173 92.288Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M113.103 104.334C112.212 100.32 111.708 97.0717 110.739 93.9674C109.947 91.4338 110.61 89.7251 112.577 88.2043C114.319 86.8565 116.013 85.4424 117.681 84.0062C118.285 83.4833 118.752 82.8057 119.677 81.7451C116.896 81.4064 114.657 81.1154 112.415 80.8724C111.2 80.7398 109.973 80.6404 108.751 80.6257C106.906 80.6036 105.812 79.6756 105.182 78.0037C104.232 75.4849 103.245 72.9771 102.229 70.484C101.971 69.8543 101.54 69.2983 100.918 68.2524C99.4155 71.7066 98.0088 74.671 96.8451 77.7238C96.0681 79.7603 95.118 80.9902 92.6434 80.9645C89.3549 80.9276 86.0627 81.4469 82.7706 81.4984C82.0193 81.5095 80.9698 80.7325 80.5831 80.0328C80.2738 79.4657 80.5021 78.2394 80.9624 77.7165C81.4448 77.1715 82.4686 76.9616 83.2824 76.8842C85.2305 76.7001 87.1969 76.5933 89.1523 76.6154C91.2661 76.6375 92.5366 75.7868 93.3099 73.7652C94.7056 70.1084 96.2964 66.5253 97.8246 62.9165C98.2076 62.0143 98.5648 61.0826 99.1025 60.2761C100.38 58.3723 102.325 58.4496 103.378 60.5265C104.313 62.3752 104.991 64.36 105.768 66.2897C106.729 68.6722 107.76 71.0327 108.6 73.4595C109.193 75.1645 110.095 76.0188 112.01 76.1367C116.521 76.4129 121.013 76.9468 125.521 77.3114C126.898 77.4219 128.305 77.3335 128.776 79.0275C129.214 80.6036 128.205 81.5868 127.167 82.4669C124.648 84.6101 122.247 86.9375 119.507 88.753C115.994 91.0803 115.177 93.809 116.521 97.7641C117.695 101.226 118.336 104.879 119.014 108.484C119.187 109.412 118.896 110.719 118.307 111.434C117.39 112.546 116.075 112.06 114.97 111.364C111.24 109.01 107.469 106.713 103.809 104.253C102.155 103.141 100.785 103.06 99.1356 104.194C97.2207 105.512 95.2174 106.713 93.1736 107.821C91.3839 108.789 89.8852 108.524 89.3401 107.247C88.6294 105.586 89.3917 104.463 90.8426 103.605C93.7923 101.855 96.7125 100.051 99.6475 98.2722C101.054 97.4179 102.325 97.5431 103.731 98.4858C106.549 100.375 109.483 102.091 113.103 104.33V104.334Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M91.5791 56.0889C91.5791 58.5377 91.5534 60.9866 91.5902 63.4355C91.6123 64.7906 90.8353 65.7334 89.69 65.645C88.8136 65.5787 87.9003 64.6986 87.2043 63.9879C86.8545 63.6306 86.8839 62.8389 86.8582 62.2387C86.593 56.1294 86.3095 50.0201 86.118 43.9108C86.0001 40.0994 85.5362 39.1825 81.8684 38.1661C79.1691 37.4186 76.3778 36.892 73.5901 36.6158C65.4039 35.8056 57.2508 36.0192 49.2156 38.0041C48.387 38.2066 47.5916 38.5417 46.7704 38.759C44.1595 39.4476 42.9774 41.1489 42.8669 43.8224C42.6349 49.4419 42.2962 55.0541 42.0016 60.6699C41.9426 61.7673 41.9868 62.8831 41.8064 63.9584C41.5928 65.2289 40.6464 65.8402 39.4164 65.7444C38.1975 65.6487 37.3285 64.96 37.299 63.638C37.2438 61.1891 37.1627 58.7292 37.2769 56.284C37.4721 52.0087 37.8808 47.748 38.0539 43.4726C38.2564 38.5491 40.6096 35.349 45.3858 34.1816C49.1751 33.2536 53.0049 32.3183 56.8715 31.9022C64.2918 31.1067 71.7488 31.1436 79.1139 32.5429C81.4928 32.9959 83.8275 33.8207 86.0959 34.6972C89.4359 35.9897 90.8868 38.5196 90.9016 42.1543C90.92 46.7979 91.2772 51.4379 91.4908 56.0778C91.5202 56.0778 91.5497 56.0778 91.5755 56.0778L91.5791 56.0889Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M50.7512 14.0089C50.8064 5.83377 56.599 -0.072969 64.4832 0.000681135C71.9624 0.0743313 77.9759 6.29777 78.0533 14.0458C78.1306 21.7753 71.7893 28.3302 64.2439 28.3228C56.5143 28.3118 50.6996 22.1436 50.7512 14.0089ZM64.2476 4.76585C59.4603 4.76216 55.4832 9.04492 55.5053 14.182C55.5311 19.459 59.4124 23.6019 64.2954 23.5614C68.8912 23.5209 73.266 18.8846 73.2439 14.0752C73.2218 9.03387 69.1011 4.77321 64.2476 4.76953V4.76585Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M52.3052 56.8659C52.3052 58.9392 52.2904 61.0088 52.3088 63.082C52.3236 64.6913 51.5429 65.7408 49.9631 65.7371C48.3649 65.7334 47.5842 64.555 47.5952 63.0452C47.6247 58.7845 47.7204 54.5202 47.842 50.2632C47.8825 48.8602 48.6227 47.9285 50.1141 47.958C51.5797 47.9874 52.3678 48.9817 52.4451 50.3037C52.5703 52.4838 52.4782 54.6785 52.4782 56.8696C52.4193 56.8696 52.3604 56.8696 52.3015 56.8696L52.3052 56.8659Z"
+                                fill="#FAF9FD" />
+                            <path
+                                d="M81.7542 57.1642C81.7542 59.127 81.791 61.0898 81.7431 63.0489C81.7063 64.5661 81.0435 65.7666 79.379 65.7408C77.7697 65.715 77.0332 64.625 77.0332 63.0415C77.0332 58.8729 77.0516 54.7043 77.0258 50.5357C77.0185 49.0664 77.7182 48.1568 79.1212 48.0132C80.6089 47.8585 81.5001 48.8896 81.5995 50.1859C81.7726 52.4985 81.6474 54.8369 81.6474 57.1605C81.6805 57.1605 81.7174 57.1605 81.7505 57.1605L81.7542 57.1642Z"
+                                fill="#FAF9FD" />
+                        </svg>
+                        <p class="h-100 section-7-card-text">Host an event @ReactorTLV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between gap-lg-0 gap-4">
+                <div class="col-xxl-4 col-lg-5 col-12">
+                    <h5>Connect and Contact Us</h5>
+                    <ul class="ps-0">
+                        <li><a href="#">Facebook page link</a></li>
+                        <li><a href="#">Facebook Founders Hub group link</a></li>
+                        <li><a href="#">Join our MFS IL Ecosystem Mailing List</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 ">
+                    <h5>Support</h5>
+                    <ul class="ps-0">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailTo:startups@microsoM.com">startups@microsoM.com</a></li>
+                        <li><a href="#">FH Support Center</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-xxl-4 col-lg-3  col-12 d-flex justify-content-lg-end align-items-lg-end justify-content-start gap-4 svg-row">
+                    <a href="www.facebook.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path
+                                d="M33 18C33 9.72 26.28 3 18 3C9.72 3 3 9.72 3 18C3 25.26 8.16 31.305 15 32.7V22.5H12V18H15V14.25C15 11.355 17.355 9 20.25 9H24V13.5H21C20.175 13.5 19.5 14.175 19.5 15V18H24V22.5H19.5V32.925C27.075 32.175 33 25.785 33 18Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="www.instagram.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <g clip-path="url(#clip0_0_371)">
+                                <path
+                                    d="M23.3988 17.9988C23.3988 19.4309 22.8298 20.8044 21.8171 21.8171C20.8044 22.8298 19.4309 23.3988 17.9988 23.3988C16.5666 23.3988 15.1931 22.8298 14.1804 21.8171C13.1677 20.8044 12.5987 19.4309 12.5987 17.9988C12.5987 17.691 12.6311 17.3904 12.6869 17.0988H10.7987V24.2934C10.7987 24.7937 11.2037 25.1987 11.7041 25.1987H24.2952C24.535 25.1983 24.7648 25.1027 24.9342 24.9329C25.1036 24.7632 25.1988 24.5332 25.1987 24.2934V17.0988H23.3106C23.3664 17.3904 23.3988 17.691 23.3988 17.9988ZM17.9988 21.5988C18.4716 21.5986 18.9398 21.5054 19.3767 21.3243C19.8135 21.1432 20.2104 20.8779 20.5447 20.5434C20.879 20.209 21.1441 19.8119 21.325 19.375C21.5058 18.9381 21.5989 18.4698 21.5988 17.997C21.5986 17.5241 21.5054 17.0558 21.3243 16.619C21.1432 16.1822 20.8779 15.7853 20.5434 15.451C20.209 15.1167 19.8119 14.8516 19.375 14.6707C18.9381 14.4899 18.4698 14.3968 17.997 14.3969C17.0419 14.3972 16.1261 14.7768 15.451 15.4523C14.7759 16.1277 14.3967 17.0437 14.3969 17.9988C14.3972 18.9538 14.7768 19.8696 15.4523 20.5447C16.1277 21.2198 17.0437 21.599 17.9988 21.5988ZM22.3187 14.2188H24.4769C24.6203 14.2188 24.7579 14.1619 24.8594 14.0607C24.961 13.9595 25.0183 13.8221 25.0187 13.6787V11.5205C25.0187 11.3769 24.9617 11.239 24.8601 11.1374C24.7585 11.0358 24.6206 10.9787 24.4769 10.9787H22.3187C22.1751 10.9787 22.0372 11.0358 21.9356 11.1374C21.834 11.239 21.777 11.3769 21.777 11.5205V13.6787C21.7787 13.9757 22.0217 14.2188 22.3187 14.2188ZM17.9988 0.71875C13.4158 0.71875 9.02057 2.53932 5.77994 5.77994C2.53932 9.02057 0.71875 13.4158 0.71875 17.9988C0.71875 22.5817 2.53932 26.9769 5.77994 30.2176C9.02057 33.4582 13.4158 35.2788 17.9988 35.2788C20.268 35.2788 22.515 34.8318 24.6115 33.9634C26.708 33.095 28.613 31.8222 30.2176 30.2176C31.8222 28.613 33.095 26.708 33.9634 24.6115C34.8318 22.515 35.2788 20.268 35.2788 17.9988C35.2788 15.7295 34.8318 13.4825 33.9634 11.386C33.095 9.28947 31.8222 7.38454 30.2176 5.77994C28.613 4.17535 26.708 2.90251 24.6115 2.03411C22.515 1.16571 20.268 0.71875 17.9988 0.71875ZM26.9988 24.9989C26.9988 26.0987 26.0987 26.9988 24.9989 26.9988H10.9985C9.89875 26.9988 8.99875 26.0987 8.99875 24.9989V10.9985C8.99875 9.89875 9.89875 8.99875 10.9985 8.99875H24.9989C26.0987 8.99875 26.9988 9.89875 26.9988 10.9985V24.9989Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_0_371">
+                                    <rect width="36" height="36" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="www.youtube.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <g clip-path="url(#clip0_0_367)">
+                                <path
+                                    d="M20.8841 17.6982L16.8414 15.8118C16.4886 15.648 16.1988 15.8315 16.1988 16.2221V19.7754C16.1988 20.166 16.4886 20.3496 16.8414 20.1858L20.8824 18.2994C21.2369 18.1337 21.2369 17.8638 20.8841 17.6982ZM17.9988 0.71875C8.45515 0.71875 0.71875 8.45515 0.71875 17.9988C0.71875 27.5424 8.45515 35.2788 17.9988 35.2788C27.5424 35.2788 35.2788 27.5424 35.2788 17.9988C35.2788 8.45515 27.5424 0.71875 17.9988 0.71875ZM17.9988 25.0187C9.15355 25.0187 8.99875 24.2213 8.99875 17.9988C8.99875 11.7762 9.15355 10.9787 17.9988 10.9787C26.844 10.9787 26.9988 11.7762 26.9988 17.9988C26.9988 24.2213 26.844 25.0187 17.9988 25.0187Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_0_367">
+                                    <rect width="36" height="36" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="www.twitter.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path
+                                d="M18 2.25C9.30234 2.25 2.25 9.30234 2.25 18C2.25 26.6977 9.30234 33.75 18 33.75C26.6977 33.75 33.75 26.6977 33.75 18C33.75 9.30234 26.6977 2.25 18 2.25ZM25.5691 14.1223C25.5797 14.2875 25.5797 14.4598 25.5797 14.6285C25.5797 19.7895 21.6492 25.7344 14.4668 25.7344C12.252 25.7344 10.1988 25.091 8.46914 23.9836C8.78555 24.0188 9.08789 24.0328 9.41133 24.0328C11.2395 24.0328 12.9199 23.4141 14.2594 22.3664C12.5437 22.3313 11.1023 21.2063 10.6102 19.6594C11.2113 19.7473 11.7527 19.7473 12.3715 19.5891C11.4881 19.4096 10.6941 18.9298 10.1244 18.2313C9.55462 17.5327 9.24429 16.6585 9.24609 15.757V15.7078C9.76289 15.9996 10.3711 16.1789 11.0074 16.2035C10.4725 15.847 10.0338 15.364 9.73023 14.7974C9.42667 14.2307 9.26762 13.5979 9.26719 12.9551C9.26719 12.2273 9.45703 11.5629 9.79805 10.9863C10.7786 12.1934 12.0021 13.1806 13.3891 13.8838C14.7762 14.587 16.2957 14.9905 17.8488 15.068C17.2969 12.4137 19.2797 10.2656 21.6633 10.2656C22.7883 10.2656 23.8008 10.7367 24.5145 11.4961C25.3969 11.3309 26.2406 11.0004 26.993 10.5574C26.7012 11.4609 26.0895 12.2238 25.2773 12.7055C26.0648 12.6211 26.8242 12.4031 27.5273 12.0973C26.9965 12.8777 26.332 13.5703 25.5691 14.1223Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/705726426e.js" crossorigin="anonymous"></script>
+    <!-- JQUERY JS  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- SLICK SLIDER JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- EXTERNAL JS  -->
+    <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>
