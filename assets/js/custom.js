@@ -18,6 +18,136 @@ $('.slider').slick({
     ]
 });
 
+let sectionSlider = document.querySelector(".section-4-row");
+
+let f = 0;
+
+if (sectionSlider.classList.contains('slick-is-active')) {
+    f = 1;
+}
+else {
+    f = 0;
+}
+
+if ((window.innerWidth < 1680
+    || document.documentElement.clientWidth < 1680
+    || document.body.clientWidth < 1680) && f == 0) {
+    sectionSlider.classList.add("slick-is-active");
+    $('.section-4-slider').slick({
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+}
+
+if ((window.innerWidth > 1680
+    || document.documentElement.clientWidth > 1680
+    || document.body.clientWidth > 1680) && f == 1) {
+    $('.section-4-slider').slick('unslick');
+    sectionSlider.classList.remove("slick-is-active");
+}
+
+window.addEventListener("resize", () => {
+    if (sectionSlider.classList.contains('slick-is-active')) {
+        f = 1;
+    }
+    else {
+        f = 0;
+    }
+
+    if ((window.innerWidth < 1680
+        || document.documentElement.clientWidth < 1680
+        || document.body.clientWidth < 1680) && f == 0) {
+        sectionSlider.classList.add("slick-is-active");
+        $('.section-4-slider').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    }
+
+    if ((window.innerWidth > 1680
+        || document.documentElement.clientWidth > 1680
+        || document.body.clientWidth > 1680) && f == 1) {
+        $('.section-4-slider').slick('unslick');
+        sectionSlider.classList.remove("slick-is-active");
+    }
+})
+
 // NAVBAR
 
 let label = document.querySelector("label");
