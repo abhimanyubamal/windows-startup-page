@@ -36,7 +36,7 @@ if ((window.innerWidth < 1680
     $('.section-4-slider').slick({
         dots: false,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         speed: 300,
         slidesToShow: 5,

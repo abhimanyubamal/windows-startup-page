@@ -4,7 +4,6 @@
 }
 
 :root {
-    --ff-segoe: 'segoe', 'sans-serif';
     --White: #fff;
     --Light-Grey: #FAF9FD;
     --Mid-Grey: #E9E6F5;
@@ -23,6 +22,28 @@
 * {
     text-decoration: none !important;
     box-sizing: border-box !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-4-lines {
+    position: absolute;
+    left: -10%;
+    top: -22%;
+    z-index: -1 !important;
+}
+
+.section-2-lines {
+    position: absolute;
+    bottom: -38%;
+    right: -1%;
+    z-index: -1;
+}
+
+.section-6-lines {
+    position: absolute;
+    top: -7%;
+    left: -4%;
+    z-index: -1;
 }
 
 h1,
@@ -47,7 +68,6 @@ nav {
 nav a {
     margin-right: 65px;
     color: var(--White, #FFF);
-    font-family: var(--ff-segoe);
     font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 148.008%;
@@ -100,7 +120,6 @@ nav a:last-child {
 
 h1 {
     color: var(--Light-Grey);
-    font-family: var(--ff-segoe);
     font-size: 76.042px;
     font-weight: 600;
     opacity: 1;
@@ -113,7 +132,6 @@ h1 {
 .hero-button {
     color: var(--Dark-Purple, #3B2E58);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-md);
     font-weight: 600;
     line-height: normal;
@@ -139,7 +157,6 @@ h1 {
 .section-heading {
     color: var(--Dark-Purple, #3B2E58);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -147,7 +164,6 @@ h1 {
 
 .section-text-style {
     color: var(--T-color-normal);
-    font-family: var(--ff-segoe);
     font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 148.008%;
@@ -187,7 +203,6 @@ h1 {
 
 .section-2-cards-heading {
     color: var(--Black, #000);
-    font-family: var(--ff-segoe);
     font-size: var(--fs-md);
     font-weight: 600;
     line-height: normal;
@@ -215,7 +230,6 @@ h1 {
 .section-3-subheading {
     color: var(--Black, #000);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-md);
     font-weight: 600;
     line-height: normal;
@@ -232,7 +246,6 @@ h1 {
     padding: 14px 42px;
     color: var(--Light-Grey, #FAF9FD);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -268,6 +281,7 @@ h1 {
 
 .section-4-cards {
     margin-top: 16px;
+    background: var(--White);
     width: 15.83%;
     box-shadow: 0px 3.076772689819336px 7.69193172454834px rgba(0, 0, 0, 0.25);
     border-radius: 7.3px;
@@ -278,6 +292,8 @@ h1 {
     transition: all 300ms;
     pointer-events: all;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .section-4-cards:hover {
@@ -296,7 +312,6 @@ h1 {
     background: var(--Light-Purple, #D59DFF);
     color: var(--Light-Grey, #FAF9FD);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -382,7 +397,6 @@ h1 {
 
 .slider-link {
     color: var(--Links, #0067B8);
-    font-family: var(--ff-segoe);
     font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 139.023%;
@@ -418,7 +432,6 @@ h1 {
 .slider-on-top-text {
     color: var(--Light-Grey, #FAF9FD);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -491,7 +504,6 @@ h1 {
 .section-6-card-heading {
     color: var(--Dark-Purple, #3B2E58);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -532,7 +544,6 @@ h1 {
 .section-7-subheading {
     color: var(--Dark-Purple, #3B2E58);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -561,7 +572,6 @@ h1 {
 .section-7-card-text {
     color: var(--Dark-Purple, #3B2E58);
     text-align: center;
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -595,7 +605,6 @@ footer ul {
 
 footer h5 {
     color: var(--T-color-normal);
-    font-family: var(--ff-segoe);
     font-size: var(--fs-lg);
     font-weight: 600;
     line-height: normal;
@@ -607,7 +616,6 @@ footer li {
 
 footer li>a {
     color: var(--T-color-normal);
-    font-family: var(--ff-segoe);
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
